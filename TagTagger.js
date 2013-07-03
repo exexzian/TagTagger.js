@@ -1,5 +1,5 @@
 /* ===================================================
- * tagger.js v0.0.1
+ * TagTagger.js v0.0.1
  * A jQuery plugin for tags creation and management.
  * 
  *===============================================================================
@@ -36,7 +36,7 @@
 		 * extend or modify default options with those provided.
 		 * empty object{} – this is to keep from overriding our "defaults" object.
 		 */
-		var settings = $.extend({}, $.fn.tagger.defaults, options);
+		var settings = $.extend({}, $.fn.TagTagger.defaults, options);
 
 		var $this = this;
 
