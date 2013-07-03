@@ -28,7 +28,7 @@
  * Requires: taggerStyles.css and jQuery.js
  * ======================================================================================= */
 
-$(function() {
+; (function($) {
 
   $.fn.tagger = function(options) {
 
@@ -229,4 +229,4 @@ $(function() {
 			'bgColor' : '#e3e18a'
 		}
 	};
-});
+})(jQuery);
