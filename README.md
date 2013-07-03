@@ -3,7 +3,10 @@
 TagTagger.js v0.0.1<br/>
 jQuery plugin to create and manage tags<br/>
 requires - taggerStyles.css and jquery.js <br/>
-**For Demo check: ** <code> taggerDemo.html </code>
+<hr>
+**Website**: http://exexzian.github.io/TagTagger.js/ <br/>
+**jQuery Plugin Link**: http://plugins.jquery.com/TagTagger/ <br/>
+**For Demo check: ** <code> taggerDemo.html </code> <br/>
 <hr size='3'>
 
 ✦ Create tags on the go - **features**<br/>
