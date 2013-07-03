@@ -1,6 +1,6 @@
-## tagger.js
+## TagTagger.js
 ============================================================================<br/>
-tagger.js v0.0.1<br/>
+TagTagger.js v0.0.1<br/>
 jQuery plugin to create and manage tags<br/>
 requires - taggerStyles.css and jquery.js <br/>
 **For Demo check: ** <code> taggerDemo.html </code>
@@ -19,7 +19,7 @@ requires - taggerStyles.css and jquery.js <br/>
 
 ### Usage: (<i> Simple as It can be </i>)
 ✦ Default mode: <br/>
-   <code> $('elementOrSelector').tagger(); </code> <br/>
+   <code> $('elementOrSelector').TagTagger(); </code> <br/>
 ✦ Passing Options by overriding Default settings (<i>change as required</i>): <br/>
 <pre>
 'box' : {
