@@ -1,11 +1,12 @@
 ## tagger.js
-======
-tagger.js v0.0.1
-jQuery plugin to create and manage tags
-requires - taggerStyles.css and jquery.js
+============================================================================<br/>
+tagger.js v0.0.1<br/>
+jQuery plugin to create and manage tags<br/>
+requires - taggerStyles.css and jquery.js <br/>
+**For Demo check: ** <code> taggerDemo.html </code>
 <hr size='3'>
 
-Create tags on the go - <b>features</b><br/>
+✦ Create tags on the go - **features**<br/>
 <hr><pre>
 ✔ Checks for duplicate tags and display fade-In/Out message<br/>
 		- which makes it less annoying - Message text can be easily changed by passing option msg<br/>
@@ -18,7 +19,7 @@ Create tags on the go - <b>features</b><br/>
 
 ### Usage: (<i> Simple as It can be </i>)
 ✦ Default mode: <br/>
-<code> $('elementOrSelector').tagger(); </code> <br/>
+   <code> $('elementOrSelector').tagger(); </code> <br/>
 ✦ Passing Options by overriding Default settings (<i>change as required</i>): <br/>
 <pre>
 'box' : {
