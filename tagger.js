@@ -225,7 +225,7 @@
 		},
 		'duplicateMsg' : {
 			'showMsg' : 'true',
-			'message' : '<pre>         Oooppsss!!!       <br/>Seems You Already Aave That Tag. </pre>',
+			'message' : '<pre>         Oooppsss!!!       <br/>Seems You Already Have That Tag. </pre>',
 			'bgColor' : '#e3e18a'
 		}
 	};
