@@ -41,10 +41,3 @@ Create tags on the go - <b>features</b><br/>
 
 
 
-
-
-1. very easy to setup with default behavior
-2. very flexible customization options
-3. minimal requirements and minimal assumptions about your technology stack and architecture
-
-
