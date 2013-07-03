@@ -30,7 +30,7 @@
 
 ; (function($) {
 
-  $.fn.tagger = function(options) {
+  $.fn.TagTagger = function(options) {
 
 		/*
 		 * extend or modify default options with those provided.
@@ -211,7 +211,7 @@
 	 * @tag key - sets tag styling
 	 * @tagProperty - sets tag property like min length of tag
 	 */
-	$.fn.tagger.defaults = {
+	$.fn.TagTagger.defaults = {
 		'box' : {
 			'width' : '500px',
 			'minHeight' : '90px'
