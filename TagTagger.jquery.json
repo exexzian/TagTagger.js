@@ -1,0 +1,36 @@
+{
+    "name": "TagTagger",
+    "title": "TagTagger.js",
+    "description": "jQuery plugin for Tag creation and management",
+    "keywords": [
+        "tag",
+        "tagger",
+  	"tagging",
+		"tags"
+    ],
+    "version": "0.0.1",
+    "author": {
+        "name": "exex zian",
+        "url": "https://github.com/exexzian/TagTagger.js/blob/master/author.txt"
+    },
+    "maintainers": [
+        {
+            "name": "exex zian",
+            "email": "genex4@gmail.com",
+            "url": "https://github.com/exexzian",
+			"twitter": "@exexzian"
+        }
+    ],
+    "licenses": [
+        {
+            "type": "MIT",
+            "url": "https://github.com/exexzian/TagTagger.js/blob/master/license.md"
+        }
+    ],
+    "homepage": "http://exexzian.github.io/TagTagger.js/",
+    "docs": "https://github.com/exexzian/TagTagger.js",
+    "download": "http://exexzian.github.io/TagTagger.js/",
+    "dependencies": {
+        "jquery": ">=1.6"
+    }
+}
