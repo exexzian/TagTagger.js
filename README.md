@@ -21,7 +21,7 @@ requires - taggerStyles.css and jquery.js <br/>
 <hr/>
 
 ### Usage: (<i> As Simple As It Can Be </i>)<br/>
-✦ Well Of course you need to import its styling file: <ode> <link href="taggerStyles.css" rel="stylesheet" type="text/css"/> </code><br/>
+✦ Well Of course you need to import its styling file: <code> <link href="taggerStyles.css" rel="stylesheet" type="text/css"/> </code><br/>
 ✦ Default mode: <br/>
    <code> $('elementOrSelector').TagTagger(); </code> <br/>
 ✦ Passing Options by overriding Default settings (<i>change as required</i>): <br/>
