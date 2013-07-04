@@ -20,7 +20,7 @@ requires - taggerStyles.css and jquery.js <br/>
 
 <hr/>
 
-### Usage: (<i> Simple as It can be </i>)
+### Usage: (<i> As Simple As It Can Be </i>)
 ✦ Default mode: <br/>
    <code> $('elementOrSelector').TagTagger(); </code> <br/>
 ✦ Passing Options by overriding Default settings (<i>change as required</i>): <br/>
