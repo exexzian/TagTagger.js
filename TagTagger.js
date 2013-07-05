@@ -153,13 +153,11 @@
 		 * @return - returns true if tag is not present else false
 		 */
 		function tagNotPresent($tagData) {
-			var $flag = false;
+			var $flag = true;
 			$('#inner span').each(function() {
 				if ($tagData === $(this).text()) {
 					$flag = false;
 					return $flag;
-				} else {
-					$flag = true;
 				}
 
 			});
