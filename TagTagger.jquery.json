@@ -6,7 +6,13 @@
         "tag",
         "tagger",
   	"tagging",
-		"tags"
+	"tags",
+	"tag creator",
+	"tag input",
+	"tag generator",
+	"add keyword",
+	"keyword"
+		
     ],
     "version": "0.0.1",
     "author": {
