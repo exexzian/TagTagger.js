@@ -14,7 +14,7 @@ requires - taggerStyles.css and jquery.js <br/>
 ✔ Checks for duplicate tags and display fade-In/Out message<br/>
 		- which makes it less annoying - Message text can be easily changed by passing option msg<br/>
 		- Want even less annoynance - of course you can pass the <code>showMsg</code> as <code>false</code><br/> 
-✔ Customization Options<br/>
+✔ Customization Options - Styleable via CSS<br/>
 ✔ Editable Tags<br/>
 ✔ Option to Finish the tag addition/edition by clicking **Done** button <br/></pre>
 
