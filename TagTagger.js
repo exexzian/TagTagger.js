@@ -71,7 +71,8 @@
 
 			$('body').append(alertClasslate);
 			$('#alertID').css({
-				'background-color' : settings.duplicateMsg.bgColor
+				'background-color' : settings.duplicateMsg.bgColor,
+				'color': settings.duplicateMsg.fontColor
 			});
 		}
 
@@ -159,7 +160,6 @@
 					$flag = false;
 					return $flag;
 				}
-
 			});
 			return $flag;
 		}
@@ -224,7 +224,8 @@
 		'duplicateMsg' : {
 			'showMsg' : 'true',
 			'message' : '<pre>         Oooppsss!!!       <br/>Seems You Already Have That Tag. </pre>',
-			'bgColor' : '#e3e18a'
+			'bgColor' : '#e3e18a',
+			'fontColor': '#ffffff'
 		}
 	};
 })(jQuery);

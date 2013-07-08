@@ -7,14 +7,10 @@
         "tagger",
   	"tagging",
 	"tags",
-	"tag creator",
-	"tag input",
-	"tag generator",
-	"add keyword",
 	"keyword"
 		
     ],
-    "version": "0.0.1",
+    "version": "0.0.2",
     "author": {
         "name": "exex zian",
         "url": "https://github.com/exexzian/TagTagger.js/blob/master/author.txt"
@@ -33,6 +29,7 @@
             "url": "https://github.com/exexzian/TagTagger.js/blob/master/license.md"
         }
     ],
+	"bugs": "https://github.com/exexzian/TagTagger.js/issues",
     "homepage": "http://exexzian.github.io/TagTagger.js/",
     "docs": "https://github.com/exexzian/TagTagger.js",
     "download": "http://exexzian.github.io/TagTagger.js/",
