@@ -5,6 +5,6 @@ change log -
      - Patch provided for redundant codes (on Duplicate check function)
      - Default styling extended : (font color for error message)
      
-✔ 0.0.2 ► 0.0.3
+✔ 0.0.2 ► 0.0.4
      - Conditional loading of jQuery plugin added
      
