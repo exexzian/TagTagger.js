@@ -33,6 +33,7 @@
     "homepage": "http://exexzian.github.io/TagTagger.js/",
     "docs": "https://github.com/exexzian/TagTagger.js",
     "download": "http://exexzian.github.io/TagTagger.js/",
+    "demo": "http://exexzian.github.io/TagTagger.js/demo/taggerDemo.html",
     "dependencies": {
         "jquery": ">=1.6"
     }
