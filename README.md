@@ -1,6 +1,6 @@
 ## TagTagger.js
 ============================================================================<br/>
-TagTagger.js v0.0.2<br/>
+TagTagger.js v0.0.3<br/>
 jQuery plugin to create and manage tags<br/>
 requires - taggerStyles.css and jquery.js <br/>
 <hr>
