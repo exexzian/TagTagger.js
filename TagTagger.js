@@ -88,6 +88,7 @@
 				//No tag creation if text is just spaces
 				var $tagData = $.trim($('#inputTag').val());
 				if ($tagData.length === 0) {
+					settings.events.onBlank( $('#inputTag').val() ); // Pass un-trimmed input to argument
 					return;
 				}
 				// Only allocate from pool of available tags option
@@ -96,12 +97,14 @@
 					//console.log('only available options to be input');
 					var inList = $.inArray($tagData,settings.tagPool['tags']);
 					if(inList < 0) {
-						//console.log('value '+value+', not in array! '+this.options.availableTags);
+						//console.log('value '+value+', not in array! '+this.options.availableTags);				
+						settings.events.onNotInPool($tagData);
 						return;
 					}
 				}
 				if (tagNotPresent($tagData) || ($('#inner').children().length == 0)) {
 					createTag();
+					settings.events.onCreated($tagData);
 				} else {
 
 					if (settings.duplicateMsg.showMsg == 'true') {
@@ -113,6 +116,7 @@
 							$('#alertID').fadeOut('3000', 'swing');
 						}, 3000));
 					}
+					settings.events.onDuplicate($tagData);
 				}
 				// clear text field after hitting enter
 				$(this).val("");
@@ -180,6 +184,7 @@
 		if (count == 0) {
 			$('#inner').on('click', 'img.spanImg', function() {
 				console.log("tag removed");
+				settings.events.onRemoved( $(this).parent('span').text() );
 				$(this).parent('span').remove();
 			});
 		}
@@ -240,6 +245,13 @@
 		'tagPool' : {
 			'onlyAvailable' : false,
 			'tags' : []
+		},
+		'events' : {
+			'onCreated':function(data){},
+			'onRemoved':function(data){},
+			'onDuplicate':function(data){},
+			'onNotInPool':function(data){},
+			'onBlank':function(data){}
 		}
 	};
 })(jQuery);
