@@ -240,7 +240,7 @@
 			'showMsg' : 'true',
 			'message' : '<pre>         Oooppsss!!!       <br/>Seems You Already Have That Tag. </pre>',
 			'bgColor' : '#e3e18a',
-			'fontColor': '#ffffff'
+			'fontColor': '#ff0000'
 		},
 		'tagPool' : {
 			'onlyAvailable' : false,
