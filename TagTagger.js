@@ -90,6 +90,16 @@
 				if ($tagData.length === 0) {
 					return;
 				}
+				// Only allocate from pool of available tags option
+				// Note commented out console.log, perhaps a debugging == true flag?
+				if (settings.tagPool.onlyAvailable == true) {
+					//console.log('only available options to be input');
+					var inList = $.inArray(value,settings.tagPool['tags']);
+					if(inList < 0) {
+						//console.log('value '+value+', not in array! '+this.options.availableTags);
+						return;
+					}
+				}
 				if (tagNotPresent($tagData) || ($('#inner').children().length == 0)) {
 					createTag();
 				} else {
@@ -226,6 +236,10 @@
 			'message' : '<pre>         Oooppsss!!!       <br/>Seems You Already Have That Tag. </pre>',
 			'bgColor' : '#e3e18a',
 			'fontColor': '#ffffff'
+		},
+		'tagPool' : {
+			'onlyAvailable' : false,
+			'tags' : []
 		}
 	};
 })(jQuery);
