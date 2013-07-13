@@ -94,7 +94,7 @@
 				// Note commented out console.log, perhaps a debugging == true flag?
 				if (settings.tagPool.onlyAvailable == true) {
 					//console.log('only available options to be input');
-					var inList = $.inArray(value,settings.tagPool['tags']);
+					var inList = $.inArray($tagData,settings.tagPool['tags']);
 					if(inList < 0) {
 						//console.log('value '+value+', not in array! '+this.options.availableTags);
 						return;
