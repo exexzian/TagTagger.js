@@ -18,8 +18,8 @@ Requires - taggerStyles.css and jquery.js <br/>
 ✔ Customization Options - Styleable via CSS<br/>
 ✔ Editable Tags<br/>
 ✔ Option to Finish the tag addition/edition by clicking **Done** button <br/>
-✔ **Tag Pool**(_available from v0.0.5_): feature provides the option to list Tags that can be added <br/>(_well it surely restricts from spamming tag-box - and well of-coure you can turn it off anytime_ - see <a href="#usage">usage</a>)<br/>
-✔ **Flexible Event Callbacks**(_available from v0.0.5_): This one gives a free hand flexibility to developers<br/> to add callbacks on events like <code>onCreated</code>, <code>onRemoved</code>, <code>onDuplicate</code>, <code>onNotInPool</code>, and <code>onBlank</code>
+✔ **Tag Pool**(<i>available from v0.0.5<i>): feature provides the option to list Tags that can be added <br/>(<i>well it surely restricts from spamming tag-box - and well of-coure you can turn it off anytime<i> <br/>- see <a href="#usage">usage</a>)<br/>
+✔ **Flexible Event Callbacks**(<i>available from v0.0.5<i>): This one gives a free hand flexibility to developers<br/> to add callbacks on events like <code>onCreated</code>, <code>onRemoved</code>, <code>onDuplicate</code>, <code>onNotInPool</code>, and <code>onBlank</code>
 </pre>
 <hr/>
 
@@ -30,7 +30,7 @@ Requires - taggerStyles.css and jquery.js <br/>
 ✦ Passing Options by overriding Default settings (<i>change as required</i>): <br/>
 ✦ <a name="usage">Sample Usage detail of v0.0.5 feature list: </a> <br/>
 ```
-$('#defaultEx').TagTagger({ 
+$('#Element').TagTagger({ 
 					'tagPool' : {
 						'onlyAvailable' : true,
 						'tags' : ['java', 'c', 'javascript', 'html', 'css']
