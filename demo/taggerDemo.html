@@ -20,11 +20,13 @@
 		
 		<script src="TagTagger.js"></script>
 	
-		
 		<script>
 			$(function() {
+
 				$('#defaultEx').TagTagger();
+
 			});
+
 		</script>
 		<style>
 			body {
@@ -33,6 +35,8 @@
 			#defaultEx {
 				background-color: #82b47e;
 				border-radius: 5px;
+				padding: 3px;
+				margin: 3px;
 			}
 
 			h2, .title {
@@ -58,6 +62,21 @@
 			code {
 				border: 1px solid gray;
 				background-color: #c7c7c7;
+				padding-right: 3px;
+				padding-left: 3px;
+				padding-top: 1px;
+				margin-right: 3px;
+				margin-top: 1px;
+				cursor: pointer;
+			}
+
+			#tagPool {
+
+			}
+
+			#frame {
+				width: 100%;
+				height: 500px;
 			}
 
 		</style>
@@ -72,14 +91,12 @@
   ga('send', 'pageview');
 
 </script>
-
-
-		
+	
 		
 	</head>
 
 	<body>
-		<h2><span class="title">TagTagger.js</span> Demo </h2>
+	<h2><span class="title">TagTagger.js</span> Demo </h2>
 		<hr size="3"/>
 		<div id="wrapper">
 			<div id="defaultEx">
@@ -109,21 +126,28 @@
 						✓   Minimum length of tag text is <b>1</b>
 					</li>
 					<li>
-						✓  Duplicate tag message Shownin yellow background
+						✓  Duplicate tag message Showing yellow background
+					</li>
+					<li>
+						✓  Styling changeable by modifying <code>
+							taggerStyles.css</code>
 					</li>
 				</ul>
 
 			</div>
 			<hr size=3/>
-			<p>
-				And To the fexibility you can easily change the styling the way you want by modifiying
-				<code>
-					taggerStyles.css
-				</code>
-				file
-			</p>
+
 		</div>
-		
+
+		<hr size="3"/>
+		<br/>
+
+		<iframe id="frame" seamless="seamless" src="TagPoolDemo.html" seamless >
+			<p>
+				Your browser does not support iframes.
+			</p>
+		</iframe>
+
 		
 		 <!-- Start of StatCounter Code for Default Guide -->
 <script type="text/javascript">
