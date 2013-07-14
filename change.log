@@ -8,9 +8,9 @@ change log -
 ✔ 0.0.2 ► 0.0.4
      - Conditional loading of jQuery plugin added
      
-✔ 0.0.4 ► 0.0.5
+✔ 0.0.4 ► 0.0.6
      - Tag Pool: feature provides the option to list Tags that can be added 
 
-     - Flexible Event Callbacks(available from v0.0.5): This one gives a free hand flexibility to developers
+     - Flexible Event Callbacks: This one gives a free hand flexibility to developers
        to add callbacks on events like onCreated, onRemoved, onDuplicate, onNotInPool
      
