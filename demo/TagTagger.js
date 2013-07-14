@@ -1,36 +1,16 @@
 /* ===================================================
  * TagTagger.js v0.0.4
  * A jQuery plugin for tags creation and management.
- * 
+ *
  *===============================================================================
  * The MIT License (MIT)
- * 
- * Copyright(c)2013 Exex Zian
- * 
- * Permission is hereby granted, free of charge, to any person obtaining a copy
- * of this software and associated documentation files (the "Software"), to deal
- * in the Software without restriction, including without limitation the rights
- * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
- * copies of the Software, and to permit persons to whom the Software is
- * furnished to do so, subject to the following conditions:
- * 
- * The above copyright notice and this permission notice shall be included in
- * all copies or substantial portions of the Software.
- * 
- * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
- * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
- * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
- * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
- * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
- * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
- * THE SOFTWARE.
  * ========================================================================================
  * Requires: taggerStyles.css and jQuery.js
  * ======================================================================================= */
 
 ; (function($) {
 
-  $.fn.TagTagger = function(options) {
+	$.fn.TagTagger = function(options) {
 
 		/*
 		 * extend or modify default options with those provided.
@@ -72,7 +52,7 @@
 			$('body').append(alertClasslate);
 			$('#alertID').css({
 				'background-color' : settings.duplicateMsg.bgColor,
-				'color': settings.duplicateMsg.fontColor
+				'color' : settings.duplicateMsg.fontColor
 			});
 		}
 
@@ -88,17 +68,18 @@
 				//No tag creation if text is just spaces
 				var $tagData = $.trim($('#inputTag').val());
 				if ($tagData.length === 0) {
-					settings.events.onBlank( $('#inputTag').val() ); // Pass un-trimmed input to argument
 					return;
 				}
 				// Only allocate from pool of available tags option
 				// Note commented out console.log, perhaps a debugging == true flag?
 				if (settings.tagPool.onlyAvailable == true) {
 					//console.log('only available options to be input');
-					var inList = $.inArray($tagData,settings.tagPool['tags']);
-					if(inList < 0) {
-						//console.log('value '+value+', not in array! '+this.options.availableTags);				
+					var inList = $.inArray($tagData, settings.tagPool['tags']);
+					if (inList < 0) {
+						//console.log('value '+value+', not in array! '+this.options.availableTags);
 						settings.events.onNotInPool($tagData);
+
+						$('#inputTag').val("");
 						return;
 					}
 				}
@@ -132,6 +113,7 @@
 			$('#nputTag').css('z-index', '-1');
 			$('#inner').append('<span class="spanTag">' + getData + '<img class="spanImg" title="Delete Tag" src="images/closegray.png"/></span>');
 
+			$('#inputTag').val("");
 			$('#inputTag').focus();
 		}
 
@@ -184,7 +166,7 @@
 		if (count == 0) {
 			$('#inner').on('click', 'img.spanImg', function() {
 				console.log("tag removed");
-				settings.events.onRemoved( $(this).parent('span').text() );
+				settings.events.onRemoved($(this).parent('span').text());
 				$(this).parent('span').remove();
 			});
 		}
@@ -193,9 +175,9 @@
 		 * Click Event handler on doneEdit button
 		 * handles edit status of tags
 		 */
-		$('#doneEdit').on('click', function() {			
+		$('#doneEdit').on('click', function() {
 			count++;
-			
+
 			/*
 			 * if button text == Done -> disbale editing and hide input textfield and X image
 			 * if button text == Edit -> enable editing and bring back input textfield and X iamge
@@ -204,8 +186,10 @@
 				$('#inner .spanImg').css('display', 'none');
 				$('#inputTag').css('visibility', 'hidden');
 				$('#inner').off('click', 'img.spanImg');
-				$(this).text('Edit').css({'background-color':'#84241a'});
-				
+				$(this).text('Edit').css({
+					'background-color' : '#84241a'
+				});
+
 			} else {
 				$('#inner .spanImg').css('display', 'inline');
 				$('#inputTag').css('visibility', 'visible');
@@ -213,7 +197,9 @@
 					console.log("tag removed");
 					$(this).parent('span').remove();
 				});
-				$(this).text('Done').css({'background-color':'#008000'});
+				$(this).text('Done').css({
+					'background-color' : '#008000'
+				});
 			}
 		});
 
@@ -240,18 +226,21 @@
 			'showMsg' : 'true',
 			'message' : '<pre>         Oooppsss!!!       <br/>Seems You Already Have That Tag. </pre>',
 			'bgColor' : '#e3e18a',
-			'fontColor': '#ff0000'
+			'fontColor' : '#ff0000'
 		},
 		'tagPool' : {
 			'onlyAvailable' : false,
 			'tags' : []
 		},
 		'events' : {
-			'onCreated':function(data){},
-			'onRemoved':function(data){},
-			'onDuplicate':function(data){},
-			'onNotInPool':function(data){},
-			'onBlank':function(data){}
+			'onCreated' : function(data) {
+			},
+			'onRemoved' : function(data) {
+			},
+			'onDuplicate' : function(data) {
+			},
+			'onNotInPool' : function(data) {
+			}
 		}
 	};
-})(jQuery);
+})(jQuery); 
