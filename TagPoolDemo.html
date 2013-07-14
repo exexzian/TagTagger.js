@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+		<meta charset="utf-8" />
+
+		<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
+		Remove this if you use the .htaccess -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+		<title>TagTagger.js Demo</title>
+		<meta name="description" content="Example File to demo TagTagger.js to create and manage tags" />
+		<meta name="author" content="exex zian" />
+
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+		<script>
+			!window.jQuery && document.write(unescape('<script src="lib/jquery.min.js"<\/script>'));
+		</script>
+
+		<script src="TagTagger.js"></script>
+
+		<link href="taggerStyles.css" rel="stylesheet" type="text/css"/>
+
+		<script>
+			$(function() {
+
+				$('#tagPool').TagTagger({
+					'tagPool' : {
+						'onlyAvailable' : true,
+						'tags' : ['java', 'c', 'jquery', 'html', 'css']
+					},
+					'events' : {
+						'onNotInPool' : function(data) {
+							alert('tag: "' + data + '" not in pool \nAvailable tags: java, c, jquery, html, css');
+						}
+					}
+				});
+
+			});
+
+		</script>
+		<style>
+			body {
+
+			}
+			#tagPool {
+				margin: 5px;
+				padding: 5px;
+				background-color: #82b47e;
+				border-radius: 5px;
+			}
+
+			h2, .title {
+				text-align: center;
+				font-family: "Courier New";
+				font-size: larger;
+				cursor: pointer;
+			}
+
+			.title {
+				color: #161D6D;
+			}
+
+			.title:hover {
+				text-shadow: 0 0 10px #ff0000;
+			}
+			p {
+				margin: 3px;
+				padding: 3px;
+				font-family: Tahoma;
+				font-size: medium;
+			}
+			code {
+				border: 1px solid gray;
+				background-color: #c7c7c7;
+				padding-right: 3px;
+				padding-left: 3px;
+				padding-top: 1px;
+				margin-right: 3px;
+				margin-top: 1px;
+				cursor: pointer;
+			}
+
+			#newVer {
+				width: 450px;
+				background-color: #bba477;
+				font-weight: bold;
+				
+			}
+			#tagList{
+				text-align: center;
+				font-weight: normal;
+			}
+
+		</style>
+	</head>
+
+	<body>
+		<br/>
+		<p id="newVer">
+			➨ Demonstrates version 0.0.5 TagPool Feature		<br/>	 
+		
+		<span id="tagList">
+			Sample Tags: 
+			<code>
+				java
+			</code>
+			<code>
+				c
+			</code>
+			<code>
+				jquery
+			</code>
+			<code>
+				html
+			</code>
+			<code>
+				css
+			</code></span>
+			<p>
+
+		<div id="tagPool">
+			<pre>
+✔ Tag Pool(available from v0.0.5): feature provides the option to list Tags that can be added 
+	(well it surely restricts from spamming tag-box - and well of-coure you can turn it off anytime 
+	- see usage)
+
+✔ Flexible Event Callbacks(available from v0.0.5): This one gives a free hand flexibility to developers
+ 	to add callbacks on events like <code>onCreated</code>, <code>onRemoved</code>, <code>onDuplicate</code>, <code>onNotInPool</code>.
+</pre>
+		</div>
+
+	</body>
+</html>
